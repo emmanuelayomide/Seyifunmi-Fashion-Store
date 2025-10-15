@@ -1,0 +1,307 @@
+/* #093FB4  THe color used Blue*/
+/* FFFCFB  The color Used white*/
+body{
+    overflow-x: hidden;
+}f
+.gallery-title{
+
+}
+.textInsideShop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    background-color: rgba(0, 0, 0, 0.171);
+    width: 100%;
+    height: 100vh;
+   text-align: center;
+}
+.textInsideShop h1{
+    font-weight: 9000;
+   
+}
+.textInsideShop p{font-weight: 9000;
+    font-family: "SUSE Mono", sans-serif;
+}
+
+.subIntroduction{
+    position: relative;
+    top: -70px;
+    background-color: #FFFCFB ;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.185);
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 12px;
+  
+  
+
+}
+.firstSection{
+ width: 50%;
+ overflow: hidden;
+
+}
+.secondSection{
+  width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+   
+}
+
+.twoSubsection{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 12px;
+    height:auto;
+ 
+}
+.secondSection img{
+    width:450px;  
+}
+.firstSection h2{
+    font-family: "SUSE Mono", sans-serif;
+    color: #093FB4;
+}
+.firstSection p{
+         font-family: 'Instrument Sans', sans-serif;
+         line-height: 250%;
+}
+
+
+.theshopimage{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    margin: 0 auto;
+    gap: 20px;
+}
+.workprocess{
+    width: 50%;
+}
+.tailoring2{
+    line-height: 150%;
+}
+.imagesection{
+
+}
+.imagesection img{
+    width: 600px;
+    border-radius: 5px;
+}
+
+/* processes Design */
+.tailorigProcesses {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+ 
+
+
+  flex-wrap: wrap;
+}
+.iconi{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 5px;
+width: 350px;
+padding: 12px;
+
+}
+.texticon h4{
+        font-family: "SUSE Mono", sans-serif;
+}
+.texticon p{
+      font-family: 'Instrument Sans', sans-serif;
+      line-height: 170%;
+}
+/* end of processes Design */
+.tailoring{
+    color: #093FB4;
+}
+
+/* Team design code */
+
+.teamtitle{
+    text-align: center;
+    margin-top: 40px;
+}
+.meetOurteam{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+ 
+
+}
+.teamsection{
+  
+    position: relative;
+    margin-bottom: 120px;
+  
+
+
+}
+.teamsection img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.nameSection{
+ position: absolute;
+ top: 50%;
+ left: 10%;
+ filter: drop-shadow(13px 13px 13px  #093fb4);
+ display: none;
+ transform: scale(0);
+
+ color: #FFFCFB;
+ background-color: rgba(0, 0, 0, 0.002);
+
+}
+.teamsection:hover .nameSection{
+    display: flex;
+   color: #FFFCFB;
+    z-index: 9999999;
+    transform: scale(1);
+     transition: transform 0.3s ease;
+}
+.personal{
+    padding: 12px;
+    text-align:center;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 3px 3px  #093fb446;
+   
+}
+.personal h3{
+    color: #093FB4;
+   
+
+}
+.personal b{
+    letter-spacing: 2px;
+     font-family: "SUSE Mono", sans-serif;
+}
+/* emd of the team code */
+
+
+
+
+
+@media (max-width:700px){
+
+.firstSection{
+    width:100%;
+
+}
+.secondSection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.twoSubsection{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 12px;
+    height: auto;
+ 
+}
+.secondSection img{
+    width:400px;  
+}
+
+
+}
+
+@media (max-width:709px){
+    .iconi{
+display: flex;
+align-items: center;
+justify-content: center;
+
+width: 370px;
+
+}
+
+.tailorigProcesses {
+   
+
+  display: flex;
+  justify-content:center;
+  align-items:center;
+
+
+  flex-wrap: wrap;
+}
+}
+
+
+@media (max-width:980px){
+    .meetOurteam {
+  display: flex;
+  overflow-x: auto;      
+  scroll-snap-type: x mandatory; 
+  -webkit-overflow-scrolling: touch; 
+  gap: 15px;
+  padding: 10px;
+
+}
+.meetOurteam {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    justify-content: flex-start; /* Align to start for scroll */
+
+  }
+
+  .teamsection {
+    flex: 0 0 auto;
+
+  }
+  .teamsection img{
+    width: 270px;
+    height: 350px;
+  }
+}
+
+
+@media (max-width:1230px){
+
+    .workprocess{
+    width: 100%;
+    padding: 5px;
+}
+
+.imagesection{
+width: 100%;
+}
+.imagesection img{
+    width: 100%;
+    border-radius: 5px;
+}
+}
+
+@media (max-width:400px){
+   .texticon p{
+      font-family: 'Instrument Sans', sans-serif;
+      font-size: 15px;
+      line-height: 150%;
+    
+}
+}

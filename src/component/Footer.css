@@ -1,0 +1,77 @@
+/* #093FB4  THe color used Blue*/
+/* FFFCFB  The color Used white*/
+
+.footer{
+    background-color:#FFFCFB;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+.socialmedia{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+.socialmedia a{
+color: black;
+}
+.socialmedia a:hover{
+    color:  #093FB4;
+}
+.brandLogo{
+    width: 100px;
+}
+.information{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+.information a{
+    color: black;
+    text-decoration: none;
+}
+.information a:hover{
+    color: #093FB4;
+}
+.reserved{
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    align-items: center;
+   
+}
+@media (max-width:450px){
+    .footer{
+    background-color:#FFFCFB;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+.brandLogo{
+    width: 150px;
+}
+.socialmedia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+.information{
+    display: flex;
+    
+    gap: 10px;
+    align-items: center;
+
+}
+
+}

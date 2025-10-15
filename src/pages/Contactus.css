@@ -1,0 +1,98 @@
+.contact-header{
+    text-align: center;
+    padding: 40px 10px 40px 10px;
+}
+.overall{
+    background-color: #093fb4ab;
+    padding: 80px 10px 80px 10px;
+}
+.contact-header h2{
+    font-weight: 300;
+    letter-spacing: 1.5px;
+     font-family: "SUSE Mono", sans-serif;
+     font-size: 2rem;
+     color: #093FB4;
+}
+.contact-header p{
+    
+    font-weight: 800;
+    opacity: 0.7;
+}
+.contact-container{
+   max-width: 1500px;
+    display: flex;
+    justify-content:space-between;
+   align-items:flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+     margin: 0 auto;
+     padding: 40px;
+     border-radius: 5px;
+    color: #fff;
+    margin: 0 auto;
+}
+input{
+    width: 100%;
+    padding: 16px;
+    margin-top: 10px;
+    outline: none;
+}
+textarea{
+     width: 100%;
+     padding: 16px;
+    margin-top: 10px;
+    outline: none;
+}
+button{
+    color:#093FB4;
+    background-color:#fff;
+    padding: 12px 25px 12px 25px;
+    outline: none;
+    cursor: pointer;
+    font-weight: 900;
+    margin-top: 10px;
+    border: none;
+}
+button:hover{
+ color: #093fb4c7;
+}
+.contact-left h3{
+   margin-bottom: 25px;
+}
+.contact-left p{
+   margin-bottom: 35px;
+}
+
+
+@media (max-width:1058px){
+  .contact-container{
+     padding: 10px;
+     justify-content: center;
+     
+}
+.contact-right{
+ 
+    width: 100%;
+    padding: 10px;
+   
+}
+.contact-left{
+    
+    width: 100%;
+    padding: 10px;
+   
+}
+input{
+    width: 90%;
+    padding: 16px;
+    margin-top: 10px;
+    outline: none;
+}
+textarea{
+     width: 90%;
+     padding: 16px;
+    margin-top: 10px;
+    outline: none;
+}
+
+}

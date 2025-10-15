@@ -1,0 +1,643 @@
+/* Full container */
+/* #093FB4  THe color used Blue*/
+/* FFFCFB  The color Used white*/
+body {
+
+}
+
+.hero-container {
+  width: 100%;
+  height: 60vh;
+  z-index: 0;
+font-family: "SUSE Mono", sans-serif;
+ 
+}
+
+/* Swiper wrapper */
+.hero-swiper {
+  height: 100%;
+}
+
+/* Each slide background */
+.hero-slide {
+  height: 60vh;
+  background-size:contain;
+  background-position:center;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  width: 100%;
+
+}
+
+/* Overlay box */
+.hero-overlay {
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 24px;
+  border-radius: 10px;
+  max-width: 600px;
+  position: absolute;
+  top: 50%;
+  left:20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+/* Title */
+.hero-title {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+
+/* Subtitle */
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 24px;
+
+ 
+}
+
+/* Button */
+.hero-button {
+  background-color:#093FB4;
+  color:#fff;
+  padding: 12px 24px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.hero-button:hover {
+  background-color: #ddd;
+}
+
+
+/* the Three images  */
+
+.Subsloths{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin-top: 10px;
+}
+.personalClothing{
+  position:relative;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.personalClothing img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  flex-shrink: 1;
+  transform: scale(1);
+}
+.personalClothing img:hover{
+  transform: scale(1.1)
+}
+.personalClothing .overlaytext{
+  position: absolute;
+  bottom: 12px;
+  left: 10%;
+  color: #FFFCFB ;
+  width: 150px;
+  font-size: 1.3rem;
+}
+/* end of the Three Images  */
+
+/* the Benefits  */
+.values{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.valuesmain{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 500px;
+  gap:20px ;
+  margin-top: 10px;
+}
+.informationBenefits b{
+  font-weight: 900;
+  font-family: "SUSE Mono", sans-serif;
+}
+.informationBenefits p{
+  opacity: 0.7;
+}
+
+
+/* end of tge benefits */
+/* the begining of About Seyi */
+.aboutseyi{
+  display: flex;
+  justify-content:center  ;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  flex-wrap: wrap;
+
+
+
+}
+.personalDesign{
+  color: #FFFCFB;
+  background-color: #093fb4d7;
+  padding:12px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-weight: 900;
+  transform: skewX(-12deg);
+
+  
+}
+.isnpo{
+ font-family: "SUSE Mono", sans-serif;
+}
+.aboutInformation{
+background-color: #fff;
+width: 50%;
+
+}
+.aboutseyImage{
+position: relative;
+
+}
+.aboutInformation p{
+    font-family: "SUSE Mono", sans-serif;
+    
+}
+.aboutseyImage img{
+  width: 500px;                  
+  height: auto;
+  display: block;
+  object-fit: cover;
+
+}
+.ceoName{
+
+  position: absolute;
+ 
+  opacity: 0;
+  transform: rotate(-60deg);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+  top: 50%;
+  left: 20%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 12px;
+}
+.aboutseyImage:hover .ceoName{
+
+opacity: 1;
+transform: translateY(0);
+
+}
+/* End of About Seyi */
+
+/* View All */
+.viewAll{
+  display: Flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+
+}
+.viewbtn{
+  position: relative;
+  display: inline-block;
+  padding: 6px 35px 6px 35px;
+  border: 2px solid #093FB4;
+  background: transparent;
+  color:#093FB4;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  transition: color 0.3s ease;
+
+
+}
+.viewbtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0; 
+  width: 0;
+  height: 100%;
+  background: #093FB4; 
+  z-index: -1;
+  transition: width 0.4s ease;
+}
+.viewbtn:hover {
+  color: #fff;
+}
+.viewbtn:hover::before {
+  width: 100%; 
+  left: 0;
+  right: auto;
+}
+/* end Of View ALl */
+
+
+/* Why choosing us Styling */
+.choosingUs{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1500px;
+  margin: 0 auto;
+ 
+  
+
+}
+.featuremain{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: 400px;
+  margin-top: 10px;
+ 
+
+
+
+}
+.imageBranding img{
+width: 400px;
+}
+.smart{
+  background-color:#FFFCFB;
+  padding: 12px;
+  margin-top: 0;
+  position: relative;
+  top: -10px;
+}
+.personalWidth{
+  max-width: 1500px;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+
+}
+/* End of Why choosing us */
+
+
+/* the branding style */
+.brands{
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  max-width: 1500px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  position: relative;
+  top: -10px;
+  padding: 5px;
+
+
+}
+.brandingItems{
+text-align: center;
+}
+/* end of the branding Style */
+
+
+/* testimonial */
+.whatClientsay{
+text-align: center;
+margin-top: 30px;
+}
+.what{
+  color: #093FB4;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-family: "SUSE Mono", sans-serif;
+}
+.testimonial{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  max-width: 1800px;
+  margin: 0 auto;
+  height: 500px;
+  padding: 20px;
+  z-index: 1;
+}
+.customer img{
+  width: 80px;
+  height: 80px;
+  border-radius:50% ;
+}
+.customer:hover .UsersName{
+  display: flex;
+}
+
+.UsersName{
+  display: none;
+}
+.UsersName .testimonailNAme{
+  color: #093FB4;
+  font-weight: 600;
+  z-index: 999999;
+}
+.diplsynames{
+  color: #093FB4;
+  font-weight: 900;
+      font-family: "SUSE Mono", sans-serif;
+}
+.customer-1 {
+  position: absolute;
+  top: 0;
+  left: 10;
+}
+.customer-2 {
+  position: absolute;
+  top: 190px;
+  left: 150px;
+}
+.customer-3 {
+  position: absolute;
+  top: 390px;
+  left: 100px;
+}
+.customer-4 {
+  position: absolute;
+  top: 280px;
+  left: 280px;
+ 
+}
+.customer-5 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+}
+
+
+.customer-6 {
+ position: absolute;
+  top: 0;
+  right: 0;
+
+}
+.customer-7{
+position: absolute;
+  top: 190px;
+  right: 150px;
+}
+.customer-7{
+  position: absolute;
+  top: 390px;
+  right: 100px;
+
+
+}
+
+.customer-8{
+  position: absolute;
+  top: 280px;
+  right: 280px;
+
+
+}
+
+.customer-9{
+  position: absolute;
+  top: 100px;
+  right: 280px;
+
+}
+
+.reviewShowing{
+  position: relative;
+  top: -180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.lastSection{
+  text-align: center;
+  background-color: #093fb4;
+  color: #FFFCFB;
+  padding: 12px;
+  padding-bottom: 25px;
+
+}
+.lastSection h1{
+    font-family: "SUSE Mono", sans-serif;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.lastSection a{
+  background-color: #FFFCFB;
+  color: #093FB4;
+  padding: 6px 25px 6px 25px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.lastSection a:hover{
+  opacity: 0.9;
+}
+/* testimonial */
+
+@media (max-width:400px){
+.hero-subtitle {
+  font-size: 105px;
+  margin-bottom: 24px;
+
+}
+
+ .personalClothing{
+  position:relative;
+  width: 350px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.lastSection p{
+    font-size: 15px;
+}
+}
+
+@media(max-width:768px){
+.hero-overlay {
+  
+  position: absolute;
+  top: 40%;
+  left:0%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+ 
+
+}
+.hero-title{
+    letter-spacing: 1px;
+    
+}
+.Subsloths{
+ flex-wrap: wrap;
+}
+}
+
+@media (max-width:805px){
+    .hero-slide {
+  height: 60vh;
+  background-size:cover;
+  background-position:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.hero-overlay {
+
+ padding:10px;
+ 
+}
+
+.hero-title {
+  font-size: 2.0rem;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+.hero-subtitle {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.068);
+  padding: 12px;
+}
+
+
+}
+@media(max-width:1000px){
+  .personalClothing{
+  position:relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.valuesmain{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 300px;
+  gap:20px ;
+  margin-top: 10px;
+  font-size: 80%;
+}
+
+
+
+
+}
+
+@media (max-width:1046px){
+  .aboutseyi{
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutInformation{
+
+width: 100%;
+
+
+}
+.aboutseyImage{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.aboutInformation p{
+    font-family: "SUSE Mono", sans-serif;
+    
+}
+.aboutseyImage img{
+  width: 400px;                  
+  height: auto;
+  display: block;
+  object-fit: cover;
+
+}
+.reviewShowing{
+  position: relative;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+
+  
+}
+.testimonial{
+flex-wrap: wrap;
+height: auto;
+justify-content: center;
+gap: 30px;
+}
+.customer-1, .customer-2, .customer-3,.customer-4, .customer-5, .customer-6, .customer-7, .customer-8, .customer-9{
+  position: static;
+
+
+}
+}
+@media (max-width:1200px) {
+  .choosingUs{
+  display: flex; 
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 1rem; /* add padding so first/last aren't cut */
+  
+
+
+ 
+}
+.face1{
+   flex: 0 0 auto;
+  min-width: 200px;
+  scroll-snap-align: start;
+}
+.imageBranding{
+   flex: 0 0 auto;
+  min-width: 200px;
+  scroll-snap-align: start;
+}
+.face2{
+   flex: 0 0 auto;
+  min-width: 200px;
+  scroll-snap-align: start;
+}
+
+.imageBranding img{
+width: 300px;
+}
+  
+}
