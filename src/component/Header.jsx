@@ -20,11 +20,12 @@ const location = useLocation();
             </div>
             {/* the Brand Menu List */}
       <div className={`menuItems ${showmenu ? "active" : ""}`}>
-                <Link to="/" className="weblink">Home</Link>
-                <Link to="/about" className="weblink">About</Link>
-                <Link to="/collections" className="weblink">Collections</Link>
-                <Link to="/gallery" className="weblink">Gallery</Link>
-                <Link to="/contact" className="weblink">Contact</Link>
+  <Link to="/" className={`weblink ${location.pathname === "/" ? "active" : ""}`}>Home</Link>
+<Link to="/about" className={`weblink ${location.pathname === "/about" ? "active" : ""}`}>About</Link>
+<Link to="/collections" className={`weblink ${location.pathname === "/collections" ? "active" : ""}`}>Collections</Link>
+<Link to="/gallery" className={`weblink ${location.pathname === "/gallery" ? "active" : ""}`}>Gallery</Link>
+<Link to="/contact" className={`weblink ${location.pathname === "/contact" ? "active" : ""}`}>Contact</Link>
+
                 <X size={32} onClick={()=> setShowmenu(false)} className="cancle"/>
                 <img src={MybrandLogo} alt="The Brand logo image" className="brandimage" />
                   <div className="socialMedia">
@@ -52,7 +53,7 @@ const location = useLocation();
             </div>
             {/* the brand Whatsapp Link */}
             <div className="whatsapp">
-               <button><a href="https://wa.me/+2349028021101" target="_blank" rel="noopener noreferrer">Book Your Outfit</a></button>
+              <a href="https://wa.me/+2349028021101" target="_blank" rel="noopener noreferrer"> <button>Book Your Outfit</button></a>
 
             </div>
             <div className="handBugger">

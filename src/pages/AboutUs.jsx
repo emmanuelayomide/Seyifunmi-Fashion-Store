@@ -64,6 +64,7 @@ const AboutUs =()=>{
   ]
 
     return (
+      <div data-aos="fade-up">
         <div className="AboutUspaageOverall">
 
         <div className="shopimage" style={{
@@ -163,6 +164,7 @@ Sheyi-Funmi Stitches — where culture meets confidence.</p>
    
 </div>
 {/* end of the Team section */}
+        </div>
         </div>
     )
 }

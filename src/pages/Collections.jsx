@@ -258,6 +258,7 @@ const numberofProduct = filteredProducts.slice(0, firstnumber)
 
 
     return (
+      <div data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1200">
         <div className="collectionspage">
     <div className="oversection" style={{
          backgroundImage: `url(${Seyibrand})`,
@@ -304,7 +305,7 @@ const numberofProduct = filteredProducts.slice(0, firstnumber)
     </button>
   </div>
 )}
-
+</div>
         </div>
     )
 }

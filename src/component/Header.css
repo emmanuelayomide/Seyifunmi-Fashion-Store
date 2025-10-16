@@ -32,11 +32,22 @@ text-decoration: none;
 .weblink{
      position: relative;
 } 
+
+
+.weblink.active {
+  background-color: #FFFCFB; 
+  color: #093FB4; 
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 2px 10px 2px 10px;
+  transition: all 0.3s ease;
+}
+
 .weblink::after {
   content: "";
   position: absolute;
-  left:0px;        /* same as padding-left */
-  bottom: -4px;      /* small space under text */
+  left:0px;       
+  bottom: -4px;     
   width: 0;
   height: 2px;
   background:#FFFCFB;

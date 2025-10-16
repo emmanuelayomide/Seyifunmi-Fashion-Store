@@ -1,5 +1,6 @@
 import {React, useState} from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useNavigate } from "react-router-dom";
 import { Link} from "react-router-dom";
 import { Award, Box, Bus, Inbox, CircleCheckBig, Star, Scissors, DollarSign, Truck, Users, ShieldCheck, Dice1, Quote} from "lucide-react";
 
@@ -12,30 +13,43 @@ import Slide1 from "../assets/slide1.jpg";
 import Sample from "../assets/sample.jpg";
 import Sample2 from "../assets/sample2.jpg";
 import Sample3 from "../assets/sample3.jpg";
+import Sample4 from "../assets/sample4.jpg";
+import Sample5 from "../assets/sample5.jpg";
+import Sample6 from "../assets/sample6.jpg";
+import Sample7 from "../assets/sample7.jpg";
+import Sample8 from "../assets/sample8.jpg";
+import Sample9 from "../assets/sample9.jpg";
 import Slide2 from "../assets/slid2.jpg";
 import Slide3 from "../assets/slide3.jpg";
 import Aboutseyi from "../assets/aboutseyi.jpg"
 import Spreading from "../assets/spreading1.png"
+import Show from "../assets/show1.jpg"
+import Show2 from "../assets/show2.jpg"
+
 
 function Home() {
+  const navigate =useNavigate();
   const slides = [
     {
       image: Slide1,
       title: "Unleash Your Style",
       subtitle: "Discover the latest fashion trends",
       button: "Shop Now",
+      path: "/collections"
     },
     {
       image: Slide2,
       title: "Redefine Elegance",
       subtitle: "Handcrafted designs for every occasion",
       button: "Explore Collection",
+      path: "/collections"
     },
     {
       image: Slide3,
       title: "Be Bold, Be You",
       subtitle: "Wear fashion that speaks confidence",
       button: "Book Appointment",
+       path: "/contact"
     },
   ];
 
@@ -43,7 +57,7 @@ function Home() {
   const cloths = [
 {
   id:1,
-  image:Sample,
+  image:Show,
   overlayText:"Lady's native dress"
   
 },
@@ -55,7 +69,7 @@ function Home() {
 },
 {
   id:3,
-  image:Sample3,
+  image:Show2,
   overlayText:"Lady's trousers"
 }
   ]
@@ -138,7 +152,7 @@ const brands = [
 const reviews = [
     { 
       id:1,
-      name: "Adedayo A.",
+      name: "Adekunbi Justinah.",
       role: "Customer",
       text: "Sheyi-Funmi Stitches made my outfit for my sister’s wedding and I got so many compliments. The quality was top-notch!",
       img: Sample,
@@ -147,7 +161,7 @@ const reviews = [
       id:2,
       name: "olamide.",
       role: "Client",
-      text: "I love the attention to detail. The native wear fits perfectly and delivery was faster than expected!",
+      text: "I absolutely love my dress from Sheyi-Funmi Stitches! It fits perfectly, and the attention to detail is just amazing.",
       img:Sample2,
     },
     {
@@ -160,26 +174,26 @@ const reviews = [
     ,
     {
       id:4,
-      name: "Opeyemi.",
+      name: "Racheal.",
       role: "Customer",
-      text: "Affordable pricing but still looks luxury. I’ll definitely order again for my next event.",
-      img:Aboutseyi,
+      text: "From design to delivery, everything was smooth. Sheyi-Funmi Stitches really understands what you want and brings it to life beautifully..",
+      img:Sample4,
     }
     ,
     {
       id:5,
-      name: "Sunday\.",
+      name: "Titilayo.",
       role: "Customer",
-      text: "Affordable pricing but still looks luxury. I’ll definitely order again for my next event.",
-      img:Spreading,
+      text: "From the first fitting to the final delivery, everything was smooth. The attention to detail is simply amazing.",
+      img:Sample5,
     }
     ,
     {
       id:6,
       name: "Toyin.",
       role: "Customer",
-      text: "Affordable pricing but still looks luxury. I’ll definitely order again for my next event.",
-      img:Sample,
+      text: "Sheyi-Funmi Stitches always understands my style. Every outfit I’ve made with them fits perfectly and looks elegant.",
+      img:Sample6,
     }
     ,
     {
@@ -187,23 +201,23 @@ const reviews = [
       name: "Olaoluwa.",
       role: "Customer",
       text: "Affordable pricing but still looks luxury. I’ll definitely order again for my next event.",
-      img:Sample2,
+      img:Sample7,
     }
     ,
     {
       id:8,
       name: "Christianah.",
       role: "Customer",
-      text: "Affordable pricing but still looks luxury. I’ll definitely order again for my next event.",
-      img:Sample3,
+      text: " definitely order again for my next event, Clean and Perfect",
+      img:Sample8,
     }
     ,
     {
       id:9,
-      name: "Emmanuel.",
+      name: "Ruth.",
       role: "Customer",
-      text: "Affordable pricing but still looks luxury. I’ll definitely order again for my next event.",
-      img:Aboutseyi,
+      text: "Sheyi-Funmi Stitches is my go-to designer now. She understands my body type and always gives me the perfect fit.",
+      img:Sample9,
     }
   ];
 const face1 = features.slice(0,3);
@@ -212,7 +226,7 @@ const [ownwersquote, setownwersquote] = useState (reviews[0])
 
   return (
     <>
-   
+   <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
     <div className="hero-container">
       <Swiper
         spaceBetween={0}
@@ -235,7 +249,7 @@ const [ownwersquote, setownwersquote] = useState (reviews[0])
               <div className="hero-overlay">
                 <h1 className="hero-title">{slide.title}</h1>
                 <p className="hero-subtitle">{slide.subtitle}</p>
-                <button className="hero-button">{slide.button}</button>
+                <button className="hero-button" onClick={()=> navigate(slide.path)}>{slide.button}</button>
               </div>
             </div>
           </SwiperSlide>
@@ -397,7 +411,7 @@ const [ownwersquote, setownwersquote] = useState (reviews[0])
 </div>
 
 {/* end of the last Section */}
-
+</div>
      </>
   );
 }

@@ -2,6 +2,8 @@ import react from "react"
 import "./Footer.css"
 import BrandLogo from "../assets/brandlogoPNG.png"
 import { Menu, X,Facebook, Twitter, Instagram, Linkedin, Copyright } from 'lucide-react';
+import { FaTiktok } from "react-icons/fa";
+
 const Footer = ()=>{
     return (
      <>
@@ -12,12 +14,12 @@ const Footer = ()=>{
 
             </div>
              <div className="socialmedia">
-                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://web.facebook.com/felicia.oladimeji.33" target="_blank" rel="noopener noreferrer">
         <Facebook className="facebook" size={25} />
       </a>
      
-      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-        <Twitter className="facebook" size={25} />
+      <a href="https://www.tiktok.com/@sheyifunmi017" target="_blank" rel="noopener noreferrer">
+         <FaTiktok size={25} className="tiktok" />
       </a>
       <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
         <Instagram className="instagram"  size={25}/>
@@ -27,10 +29,10 @@ const Footer = ()=>{
       </a>
             </div>
              <div className="information">
-      <a href="#">FAQs</a>
-      <a href="#">Contact Us</a>
-      <a href="#">Location</a>
-      <a href="#">Terms & Condition</a>
+      <a href="/">Home</a>
+      <a href="/contact">Contact Us</a>
+      <a href="/gallery">Gallery</a>
+      <a href="/collections">Collections</a>
                 
             </div>
         </div>

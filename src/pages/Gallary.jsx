@@ -19,7 +19,7 @@ const Gallery = () => {
       <h2 className="gallery-title">
         SeyiFunmi <span className="personaldownload">Native</span> Collection
       </h2>
-
+ <div data-aos="fade-up">
       <div className="gallery-grid">
         {visibleProducts.map((product) => (
           <div key={product.id} className="gallery-card">
@@ -34,7 +34,7 @@ const Gallery = () => {
           </div>
         ))}
       </div>
-
+</div>
       {/* Load More Button */}
       {visibleCount < products.length && (
         <div className="load-more-container">

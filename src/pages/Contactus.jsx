@@ -13,10 +13,10 @@ const Contactus = () => {
 
     emailjs
       .sendForm(
-        "service_6fbqzfh", // ✅ your service ID
-        "template_uigk7ti", // ✅ your template ID
+        "service_6fbqzfh", 
+        "template_uigk7ti", 
         form.current,
-        "adtPE_EPbYOO0xrlb" // ✅ your public key
+        "adtPE_EPbYOO0xrlb" 
       )
      .then(
   (result) => {
@@ -42,6 +42,7 @@ const Contactus = () => {
   };
 
   return (
+    <div data-aos="slide-up" data-aos-delay="200" data-aos-duration="1200">
     <section className="contact-section">
       <div className="contact-header">
         <h2>Get In Touch</h2>
@@ -58,13 +59,14 @@ const Contactus = () => {
             <p>We’d love to hear from you.</p>
             <div className="contact-info">
               <p>
-                <MapPin size={16} /> 46 Isaac John Ikeja, GRA Lagos.
+                <MapPin size={16} /> Kuye, Ogbomoso,Oyo state.
               </p>
               <p>
-                <Phone size={16} /> +2348177775802
+                <Phone size={16} /> +2349028021101 , +2347076217682
+
               </p>
               <p>
-                <Mail size={16} /> contact@seyifunmi.com
+                <Mail size={16} /> oladimejifelicia2020@gmail.com
               </p>
             </div>
           </div>
@@ -86,6 +88,7 @@ const Contactus = () => {
         </div>
       </div>
     </section>
+    </div>
   );
 };
 
